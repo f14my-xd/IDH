@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Информатика для чайников</title>
+    <link rel="stylesheet" href="../../../resurses/lession_theory.css">
+</head>
+<body>
+    <div class="main">
+        <div class="panel">
+            <div class="header">
+                <div class="header-img" style="background-image: url('../../../resurses/img/les2.png');"></div>
+                <div class="header-text">Двоичная, восьмеричная и шестнадцатеричная системы счисления</div>
+            </div>
+            <div class="theory">Теория</div>
+            <a href="../theory/1.html"><button class="button">История появления систем счисления. Основные понятия</button></a>
+            <a href="../theory/2.html"><button class="button-active">Двоичная, восьмеричная и шестнадцатеричная системы счисления</button></a>
+            <a href="../theory/3.html"><button class="button">Прямой перевод между двоичной, восьмеричной и шестнадцатеричной системами счисления</button></a>
+            <a href="../theory/4.html"><button class="button">Арифметические действия в позиционных системах счисления</button></a>
+        </div>
+        <div class="content">
+            <div class="content-header">Двоичная, восьмеричная и шестнадцатеричная системы счисления.</div>
+            <div class="text">
+                Любое число позиционной системы счисления можно представить в свёрнутой форме и развёрнутой. Со свёрнутой формой ты встречаешься постоянно, но совсем не задумываешься, как получаешь развёрнутую форму числа, умножая каждую цифру числа на её вес. Рассмотрим подробнее развёрнутую форму числа.
+            </div>
+            <div class="warn">
+                <span style="font-weight: 900; font-size: 26px; margin-right: 7px;">!</span>
+                Развёрнутая форма числа — это сумма произведений цифр числа на основание этой системы счисления с соответствующей степенью.
+            </div>
+            <div class="text">
+                Представим десятичное число 123,2 в развернутом виде
+            </div>
+            <div class="text"></div>
+            <div class="text">
+                Для этого необходимо пронумеровать разряды. Разряд единиц - 0, десятков - 1 и т.д.
+            </div>
+            <div class="text">
+                Теперь будем умножать каждую цифру числа на основание системы счисления в степени, соответствующей разряду.
+            </div>
+            <div class="img adaptive-img" 
+            style="background-image: url('../../../resurses/img/lession/2/1.png'); width: 500px; height: 110px;"></div>
+            <div class="img adaptive-img" 
+            style="background-image: url('../../../resurses/img/lession/2/2.png'); width: 600px; height: 205px;"></div>
+
+            <div class="header">
+                <div class="header-text" style="margin: 15px;">Двоичная:</div>
+            </div>
+
+            <div class="text" style="margin-top: 0;">Основание: 2</div>
+            <div class="text">Алфавит: 0, 1</div>
+            <div class="text">Переведем двичное число 1011011 в десятичную систему счисления:</div>
+            <div class="text">Запишем число в развернутом виде:</div>
+
+            <div class="img adaptive-img" 
+            style="background-image: url('../../../resurses/img/lession/2/3.png'); width: 450px; height: 90px;"></div>
+
+            <div class="text">
+                Для перевода десятичного числа в двоичную систему счисления необходимо выполнить следующие действия:
+            </div>
+            <div class="text">1. Разделим число 10 на 2 - основание новой системы счисления.</div>
+            <div class="text">2. Далее будем делить получившиеся частные на 2 до тех пор, пока не получится ноль.</div>
+
+            <div class="img adaptive-img" 
+            style="background-image: url('../../../resurses/img/lession/2/4.png'); width: 250px; height: 250px;"></div>
+
+            <div class="text">3. Соберём остатки от деления в обратном порядке и получим двоичное число: 1010.</div>
+
+            <div class="header">
+                <div class="header-text" style="margin: 15px;">Восьмеричная:</div>
+            </div>
+
+            <div class="text" style="margin-top: 0;">Основание: 8.</div>
+            <div class="text">Алфавит: 0, 1, 2, 3, 4, 5, 6, 7.</div>
+            <div class="text">Переведем восмиричное число число 768 в десятичную систему счисления:</div>
+            <div class="text">Запишем число в развернутом виде:</div>
+
+            <div class="text">768 = 7 * 8 + 0 * 8 = 62</div>
+            <div class="text">1. Разделим число 10 на 8 - основание новой системы счисления.</div>
+            <div class="text">2. Далее будем делить получившиеся частные на 8 до тех пор, пока не получится ноль.</div>
+
+            <div class="img adaptive-img" 
+            style="background-image: url('../../../resurses/img/lession/2/5.png'); width: 250px; height: 250px;"></div>
+
+            <div class="header">
+                <div class="header-text" style="margin: 15px;">Шестнадцатеричная:</div>
+            </div>
+
+            <div class="text" style="margin-top: 0;">Основание: 16.</div>
+            <div class="text">Алфавит: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F.</div>
+            <div class="text">Переведем Шестнадцатеричное число 7B в десятичную систему счисления:</div>
+            <div class="text">Запишем число в развернутом виде:</div>
+
+            <div class="text">7B = 7 * 16 + 11 * 16 = 112 + 11 = 123.</div>
+            <div class="text">1. Разделим число 27 на 16 - основание новой системы счисления.</div>
+            <div class="text">2. Далее будем делить получившиеся частные на 16 до тех пор, пока не получится ноль.</div>
+
+            <div class="img adaptive-img" 
+            style="background-image: url('../../../resurses/img/lession/2/6.png'); width: 250px; height: 250px;"></div>
+
+            <div class="buttons">
+                <a href="../theory/1.html"><div class="back">< Назад</div></a>
+                <a href="../theory/3.html"><div class="next">Далее ></div></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

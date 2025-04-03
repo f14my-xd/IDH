@@ -1,0 +1,41 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+
+.header-text {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.header-img {
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    background-image: url("./img/select.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.p {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    color: #000000;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.lession-text {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: #5F72FF;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+a {
+    text-decoration: none;
+}
